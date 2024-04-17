@@ -1,3 +1,4 @@
+import 'package:acamansys/page/chat/chat.dart';
 import 'package:acamansys/page/dashboard/dashboard.dart';
 import 'package:acamansys/page/student/student.dart';
 import 'package:acamansys/page/student/student_data.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
   routes: {
     '/': (context) => HomeScreen(),
     '/student': (context) => StudentUI(students: dummyStudentData),
+     '/Chat': (context) => ChatPage(),
     },);
 }
 }

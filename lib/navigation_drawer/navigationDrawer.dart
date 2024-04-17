@@ -1,4 +1,5 @@
 
+import 'package:acamansys/page/assignment/assignment.dart';
 import 'package:acamansys/page/chat/chat.dart';
 import 'package:acamansys/page/student/student.dart';
 import 'package:acamansys/page/student/student_data.dart';
@@ -78,9 +79,14 @@ class NavDrawer extends StatelessWidget {
             shape: border,
             tileColor:Theme.of(context).colorScheme.primary,
             leading: const Icon(Icons.calendar_month_rounded),
-            title: Text("Schedule",
+            title: Text("Assignment",
             style: Theme.of(context).textTheme.bodyMedium),
-            onTap: () {},
+             onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MyHomePage()),
+            );
+            },
           ),
 
            const SizedBox(height: 20),
